@@ -60,3 +60,11 @@
 .min-h-698{
   min-height: 698px;
 }
+.swiper-slide-detail{
+  @extend #{".bg-full", ".bg-no-repeat", ".text-center", ".w-full", ".max-w-content"};
+}
+@media only screen and (max-height: ($screen-h-xs - 1)) {
+  .h-xs-50p{
+    max-height: 50vh;
+  }
+}

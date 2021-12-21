@@ -1,0 +1,33 @@
+.swiper-custom{
+  height: 100vh;
+  .swiper-slide{
+    @extend #{".bg-cover", ".flex", ".flex-col", ".justify-center", ".items-start"};
+    height: 100vh !important;
+    padding-bottom: $p-indent-page;
+    padding-top: $p-indent-page;
+    //&.swiper-slide-active{
+    //  @extend .opacity-1;
+    //}
+  }
+  [class^=swiper-button-]{
+    @extend #{".left-0", ".right-0"};
+    background: url("../../images/icons/arrow-down.svg");
+    margin: 0 auto;
+    height: 18px;
+    width: 30px;
+    &:after{
+      @extend #{'.hidden'};
+    }
+    &.swiper-button-disabled{
+      @extend .opacity-0;
+    }
+  }
+  .swiper-button-next{
+    top: auto;
+    bottom: 20px;
+  }
+  .swiper-button-prev{
+    top: 20px;
+    @extend #{".rotate-180"};
+  }
+}

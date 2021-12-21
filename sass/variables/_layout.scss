@@ -2,13 +2,15 @@ $layout-indent-xs: 8px;
 $layout-indent: 16px;
 $max-w-content: 375px;
 
-$p-indent-page: 6.2vh;
+$p-indent-page: 50px;
+
+$screen-h-xs: 812px;
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
-.page-main{
-  @extend #{".flex", ".flex-col", ".min-h-screen", ".justify-center"};
-  padding-top: $p-indent-page;
-  padding-bottom: $p-indent-page;
-}
+//.page-main{
+//  @extend #{".flex", ".flex-col", ".min-h-screen", ".justify-center"};
+//  padding-top: $p-indent-page;
+//  padding-bottom: $p-indent-page;
+//}
