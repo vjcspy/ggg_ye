@@ -1,0 +1,30 @@
+$leading-base: 20px;
+
+$text-xs: 0.75rem; //12px
+$text-sm: 0.8125rem; //13px
+$text-base: 0.875rem; //14px
+$text-lg: 0.9375rem; //15px
+$text-xl: 1.125rem; //18px
+$text-2xl: 1.25rem; //20px
+$text-3xl: 1.57rem; //22px
+
+$font-weight__normal: 500;
+$font-weight__bold: 700;
+$font-weight__extrabold: 800;
+
+$sans-serif: Helvetica,Arial,sans-serif;
+
+body{
+  font-family: $font-family__base, $sans-serif;
+  font-size: $text-base;
+  font-weight: $font-weight__normal;
+  line-height: $leading-base;
+}
+h3{
+  font-size: $text-base;
+  font-weight: $font-weight__extrabold;
+  margin: 0;
+}
+p{
+  margin: 0;
+}

@@ -1,0 +1,22 @@
+.btn{
+  @extend #{".text-white", ".bg-cover", ".bg-no-repeat", ".text-center", ".inline-flex", ".items-center", ".justify-center", ".text-lg"};
+  height: 52px;
+  width: 243px;
+}
+.btn-pink{
+  background: url("../../images/icons/button-pink.svg");
+}
+.btn-purple{
+  background: url("../../images/icons/button-purple.svg");
+}
+.btn-hand{
+  @extend .relative;
+  &:after{
+    @extend #{".block", ".absolute"};
+    background: url("../../images/icons/icon-button.svg");
+    content: "";
+    height: 41px;
+    bottom: -26px;
+    width: 92px;
+  }
+}

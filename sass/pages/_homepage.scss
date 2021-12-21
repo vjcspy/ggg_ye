@@ -1,0 +1,62 @@
+.obj-image{
+  &:before{
+    padding-bottom: 98%;
+    display: block;
+    content: "";
+    min-height: 382px;
+  }
+  img{
+    @extend #{".absolute", ".top-0"};
+    left: -($layout-indent + $layout-indent-xs);
+    right: -($layout-indent + $layout-indent-xs);
+    max-height: 382px;
+    max-width: 100vw;
+  }
+  &.max-h-340{
+    &:before{
+      min-height: 340px;
+    }
+    img{
+      max-height: 340px;
+    }
+  }
+}
+.top-56p{
+  top: 56%;
+}
+.top-65p{
+  top: 65%;
+}
+.top-69p{
+  top: 69%;
+}
+.top-12p{
+  top: 12%;
+}
+.top-17p{
+  top: 17%;
+}
+.bg-bottom-50{
+  background-position: center bottom -50px;
+}
+.arrow-up{
+  top: -24px;
+}
+.arrow-down{
+  bottom: -26px;
+}
+.pt-5s{
+  padding-top: 5vh;
+}
+.pt-7s{
+  padding-top: 7vh;
+}
+.min-h-688{
+  min-height: 688px;
+}
+.min-h-695{
+  min-height: 695px;
+}
+.min-h-698{
+  min-height: 698px;
+}

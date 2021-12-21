@@ -1,0 +1,9 @@
+.page-header{
+  height: 4.875rem; //78px
+}
+.page-footer{
+  height: 3.125rem; //50px
+}
+body{
+  @extend #{".m-0",".min-h-screen"};
+}
