@@ -61,10 +61,19 @@
   min-height: 698px;
 }
 .swiper-slide-detail{
-  @extend #{".bg-full", ".bg-no-repeat", ".text-center", ".w-full", ".max-w-content"};
+  @extend #{".bg-full", ".bg-no-repeat", ".text-center", ".w-full", ".max-w-content", ".mx-auto"};
+}
+.icon-delete{
+  @extend .bottom-20;
 }
 @media only screen and (max-height: ($screen-h-xs - 1)) {
+  .swiper-slide-detail{
+    transform: scale(.93);
+  }
   .h-xs-50p{
-    max-height: 50vh;
+    max-height: 55vh;
+  }
+  .icon-delete{
+    bottom: 5px;
   }
 }

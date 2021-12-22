@@ -113,7 +113,7 @@ p {
 .m-auto {
   margin: auto; }
 
-.mx-auto, .container, img {
+.mx-auto, .container, img, .swiper-slide-detail {
   margin-left: auto;
   margin-right: auto; }
 
@@ -378,7 +378,7 @@ p {
 .top-25 {
   top: 25px; }
 
-.bottom-20 {
+.bottom-20, .icon-delete {
   bottom: 20px; }
 
 .box-border {
@@ -394,6 +394,9 @@ p {
 
 .opacity-1 {
   opacity: 1; }
+
+.overflow-hidden, .swiper-custom .swiper-slide {
+  overflow: hidden; }
 
 .page-header {
   height: 4.875rem; }
@@ -490,7 +493,14 @@ p {
   min-height: 698px; }
 
 @media only screen and (max-height: 811px) {
+  .swiper-slide-detail {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93); }
+
   .h-xs-50p {
-    max-height: 50vh; } }
+    max-height: 55vh; }
+
+  .icon-delete {
+    bottom: 5px; } }
 
 /*# sourceMappingURL=styles.css.map */

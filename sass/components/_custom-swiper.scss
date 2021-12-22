@@ -1,13 +1,10 @@
 .swiper-custom{
   height: 100vh;
   .swiper-slide{
-    @extend #{".bg-cover", ".flex", ".flex-col", ".justify-center", ".items-start"};
+    @extend #{".bg-cover", ".flex", ".flex-col", ".justify-center", ".items-start", ".overflow-hidden"};
     height: 100vh !important;
     padding-bottom: $p-indent-page;
     padding-top: $p-indent-page;
-    //&.swiper-slide-active{
-    //  @extend .opacity-1;
-    //}
   }
   [class^=swiper-button-]{
     @extend #{".left-0", ".right-0"};
